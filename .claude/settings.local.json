@@ -5,7 +5,12 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(git pull:*)",
-      "Bash(git fetch:*)"
+      "Bash(git fetch:*)",
+      "Bash(git checkout:*)",
+      "Bash(gh pr create:*)",
+      "Bash(timeout:*)",
+      "Bash(npm install:*)",
+      "Read(//c/Users/Felles/Pictures/Screenshots/**)"
     ],
     "deny": [],
     "ask": []
