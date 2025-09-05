@@ -8,7 +8,7 @@ Built with **React + Vite**, powered by **Supabase**, and deployed on **Vercel**
 ## 🚀 Tech Stack
 
 - **Frontend Framework**: [React](https://react.dev/) (via [Vite](https://vitejs.dev/))
-- **Styling**: Vanilla CSS
+- **Styling**: Tailwind CSS
 - **Backend / Database**: [Supabase](https://supabase.com/) (Postgres, Auth, Storage)
 - **Deployment**: [Vercel](https://vercel.com/) (CI/CD from GitHub)
 - **Version Control**: [GitHub](https://github.com/)
