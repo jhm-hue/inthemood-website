@@ -10,7 +10,11 @@
       "Bash(gh pr create:*)",
       "Bash(timeout:*)",
       "Bash(npm install:*)",
-      "Read(//c/Users/Felles/Pictures/Screenshots/**)"
+      "Read(//c/Users/Felles/Pictures/Screenshots/**)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "WebSearch",
+      "WebFetch(domain:ui.shadcn.com)"
     ],
     "deny": [],
     "ask": []

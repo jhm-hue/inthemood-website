@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'noto': ['Noto Sans', 'sans-serif'],
+      },
+      backgroundColor: {
+        'dark': '#1a1a1a',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
