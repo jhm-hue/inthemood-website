@@ -4,7 +4,8 @@ const Contact = () => {
   return (
     <div>
       <p className="text-xl font-light text-white font-noto italic">
-        This page is under construction
+        ingvilde@gmail.com<br></br>
+        +4797664222<br></br>
       </p>
     </div>
   );
