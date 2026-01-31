@@ -9,9 +9,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   };
 
   const navLinks = [
-    { path: "/", label: "HJEM" },
-    { path: "/mood", label: "MOOD" },
-    { path: "/contact", label: "KONTAKT" },
+    { path: "/", label: "HOME" },
+    { path: "/about", label: "ABOUT" },
+    { path: "/contact", label: "CONTACT" },
   ];
 
   return (
