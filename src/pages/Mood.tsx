@@ -1,5 +1,3 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
 import moodSvg from "@/assets/mood.svg";
 
 const Mood = () => {
