@@ -4,10 +4,17 @@ const Contact = () => {
   return (
     <div>
       <p className="text-xl font-light text-white font-noto italic">
-        ingvild@inthemoodfilm.com <br></br>
-        +4797664222<br></br>
-      </p>
-    </div>
+       	INGVILD EVJEMO <br></br>
+	CEO and Producer <br></br>
+	ingvild@inthemoodfilm.com <br></br>
+        +47 97664222<br></br>
+       </p>
+
+<p className="text-xl font-light text-white font-noto italic">
+   	GENERAL INQUIRIES: <br></br>
+	post@inthemoodfilm.com <br></br>
+
+ </div>
   );
 };
 
