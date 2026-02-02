@@ -17,6 +17,18 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   ];
 
   return (
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7EESHQBYC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y7EESHQBYC');
+</script>
+
+
     <div className="min-h-screen bg-dark text-white font-noto flex flex-col">
       {/* Navigation */}
       <nav className="py-4 text-center">
