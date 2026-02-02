@@ -5,17 +5,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Development Commands
 
 - **Development server**: `npm run dev` (automatically opens browser at http://localhost:5173)
-- **Build**: `npm run build` 
+- **Build**: `npm run build`
 - **Linting**: `npm run lint`
 - **Preview build**: `npm run preview`
 
 ## Environment Setup
 
 Create `.env` file with Supabase credentials:
+
 ```
 VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-key
 ```
+
 All environment variables must be prefixed with `VITE_` to be exposed in Vite.
 
 ## Tech Stack & Architecture
@@ -26,11 +28,14 @@ All environment variables must be prefixed with `VITE_` to be exposed in Vite.
 **Deployment**: Vercel
 
 ### Database Schema
+
 Two main tables in Supabase:
+
 - `productions` - Movies & series with posters, trailers, descriptions
 - `news` - Company updates and press releases
 
 ### Current Structure
+
 - `index.html` - HTML entry point for Vite with React root div
 - `src/supabaseClient.js` - Supabase configuration and client initialization
 - `src/App.jsx` - Main app component (currently default Vite template)
@@ -38,6 +43,7 @@ Two main tables in Supabase:
 - TypeScript configured with strict mode and React JSX support
 
 ### Planned Structure (from README)
+
 ```
 src/
 ├─ components/         # Reusable components (Navbar, Footer, etc.)
@@ -56,6 +62,7 @@ src/
 ## Project Status
 
 This is a company website for INTHEMOOD PICTURES production company. The codebase is currently in initial setup phase with:
+
 - Supabase client configured
 - Basic React + Vite structure in place
 - TypeScript and ESLint configured
