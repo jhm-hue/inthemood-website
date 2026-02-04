@@ -15,7 +15,8 @@
       "Bash(npm run dev:*)",
       "WebSearch",
       "WebFetch(domain:ui.shadcn.com)",
-      "Bash(npm run lint:*)"
+      "Bash(npm run lint:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
