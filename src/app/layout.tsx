@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -32,9 +33,10 @@ export default function RootLayout({
       <body>
         <div className="min-h-screen bg-background text-foreground font-sans flex flex-col">
           <Navigation />
-          <main className="flex-1 flex items-center justify-center text-center px-8">
+          <main className="flex-1">
             {children}
           </main>
+          <Footer />
         </div>
         <GoogleAnalytics gaId="G-Y7EESHQBYC" />
       </body>
