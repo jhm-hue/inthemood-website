@@ -71,7 +71,7 @@ Feature-based structure: when adding features (productions, news), create `src/f
 
 ## Design System: "The Silent Frame"
 
-The project follows a strict design system defined in `DESIGN.md`. **Read `DESIGN.md` before any UI/styling work.** Use `/design` for the full implementation guide.
+The project follows a strict design system called "The Silent Frame." **Use `/design` for the full implementation guide** before any UI/styling work.
 
 ### Critical Rules (non-negotiable)
 1. **0px border-radius everywhere** — sharp architectural corners, no exceptions
