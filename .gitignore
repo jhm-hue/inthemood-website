@@ -20,7 +20,7 @@ node_modules
 out/
 
 # Bun
-bun.lock
+# bun.lock should be committed for reproducible installs
 
 # Editor directories and files
 .vscode/*
