@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
   title: "INTHEMOOD PICTURES",
@@ -20,196 +21,210 @@ export default function Home() {
 
         {/* Hero content */}
         <div className="relative z-10 text-center px-8">
-          <h1 className="font-heading font-extrabold text-5xl md:text-8xl lg:text-[7.5rem] tracking-[0.25em] uppercase leading-none text-white">
+          <h1 className="hero-animate font-heading font-extrabold text-5xl md:text-8xl lg:text-[7.5rem] tracking-[0.25em] uppercase leading-none text-white" style={{ animationDelay: "0.2s" }}>
             INTHEMOOD PICTURES
           </h1>
         </div>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-10">
-          <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/30">
+          <span className="hero-animate font-sans text-[10px] uppercase tracking-[0.3em] text-white/30" style={{ animationDelay: "0.8s" }}>
             Scroll to Explore
           </span>
-          <div className="w-px h-12 bg-white/20" />
+          <div className="hero-line-animate w-px h-12 bg-white/20" style={{ animationDelay: "1s" }} />
         </div>
       </section>
 
       {/* ── Our Story Section ── */}
       <section className="py-32 md:py-64 px-8 md:px-16 relative">
         <div className="max-w-5xl mx-auto">
-          <div className="glass-panel p-12 md:p-24 relative">
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-white/40 block mb-8">
-              Origins / Protocol
-            </span>
-            <h2 className="font-heading font-bold text-4xl md:text-6xl tracking-[0.2em] uppercase mb-16">
-              OUR STORY
-            </h2>
-            <div className="space-y-12 max-w-3xl">
-              <p className="font-sans italic text-2xl md:text-3xl leading-relaxed font-light text-white/90">
-                INTHEMOOD is a Norwegian production company and high-end tech
-                house with an opportunistic mindset. We are based in Oslo. We
-                believe the future will be different than today.
-              </p>
-              <p className="font-sans italic text-xl md:text-2xl leading-relaxed font-light text-white/50">
-                By embracing intentional asymmetry and the luxury of negative
-                space, INTHEMOOD PICTURES defines the next era of architectural
-                cinema through technical precision.
-              </p>
+          <Reveal>
+            <div className="glass-panel p-12 md:p-24 relative">
+              <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-white/40 block mb-8">
+                Origins / Protocol
+              </span>
+              <h2 className="font-heading font-bold text-4xl md:text-6xl tracking-[0.2em] uppercase mb-16">
+                OUR STORY
+              </h2>
+              <div className="space-y-12 max-w-3xl">
+                <p className="font-sans italic text-2xl md:text-3xl leading-relaxed font-light text-white/90">
+                  INTHEMOOD is a Norwegian production company and high-end tech
+                  house with an opportunistic mindset. We are based in Oslo. We
+                  believe the future will be different than today.
+                </p>
+                <p className="font-sans italic text-xl md:text-2xl leading-relaxed font-light text-white/50">
+                  By embracing intentional asymmetry and the luxury of negative
+                  space, INTHEMOOD PICTURES defines the next era of architectural
+                  cinema through technical precision.
+                </p>
+              </div>
+              <div className="mt-24">
+                <Link
+                  href="/about"
+                  className="inline-block px-12 py-6 border border-white/20 text-white font-sans uppercase text-[10px] tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-500"
+                >
+                  Access Archive
+                </Link>
+              </div>
+              <div className="absolute top-0 right-0 p-4 font-sans text-[8px] text-white/20 tracking-widest">
+                v.04 // Oslo
+              </div>
             </div>
-            <div className="mt-24">
-              <Link
-                href="/about"
-                className="inline-block px-12 py-6 border border-white/20 text-white font-sans uppercase text-[10px] tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-500"
-              >
-                Access Archive
-              </Link>
-            </div>
-            <div className="absolute top-0 right-0 p-4 font-sans text-[8px] text-white/20 tracking-widest">
-              v.04 // Oslo
-            </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* ── Selected Filmography ── */}
       <section className="py-32 md:py-48 px-8 md:px-16 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-24 flex flex-col md:flex-row justify-between items-baseline gap-8">
-            <h2 className="font-heading font-bold text-4xl md:text-6xl tracking-[0.2em] uppercase">
-              SELECTED
-              <br />
-              FILMOGRAPHY
-            </h2>
-            <p className="font-sans text-xs uppercase tracking-widest text-white/40">
-              2019 — 2024 Collection
-            </p>
-          </div>
+          <Reveal>
+            <div className="mb-24 flex flex-col md:flex-row justify-between items-baseline gap-8">
+              <h2 className="font-heading font-bold text-4xl md:text-6xl tracking-[0.2em] uppercase">
+                SELECTED
+                <br />
+                FILMOGRAPHY
+              </h2>
+              <p className="font-sans text-xs uppercase tracking-widest text-white/40">
+                2019 — 2024 Collection
+              </p>
+            </div>
+          </Reveal>
 
           <div className="space-y-6">
             {/* MERCY */}
-            <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-6">
-                  <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                    01
-                  </span>
-                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                    MERCY
-                  </h3>
+            <Reveal delay={0}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6">
+                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
+                      01
+                    </span>
+                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                      MERCY
+                    </h3>
+                  </div>
+                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
+                    Nominated for the Golden Bear — Feature Film
+                  </p>
                 </div>
-                <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                  Nominated for the Golden Bear — Feature Film
-                </p>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2012
+                  </span>
+                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
+                    Berlin Selection
+                  </span>
+                </div>
               </div>
-              <div className="mt-8 md:mt-0 text-right">
-                <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                  2012
-                </span>
-                <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                  Berlin Selection
-                </span>
-              </div>
-            </div>
+            </Reveal>
 
             {/* CATTLE HILL */}
-            <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-6">
-                  <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                    02
-                  </span>
-                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                    CATTLE HILL
-                  </h3>
+            <Reveal delay={80}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6">
+                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
+                      02
+                    </span>
+                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                      CATTLE HILL
+                    </h3>
+                  </div>
+                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
+                    Best Children&apos;s Film — Amanda Nominated
+                  </p>
                 </div>
-                <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                  Best Children&apos;s Film — Amanda Nominated
-                </p>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2019
+                  </span>
+                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
+                    Nominated
+                  </span>
+                </div>
               </div>
-              <div className="mt-8 md:mt-0 text-right">
-                <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                  2019
-                </span>
-                <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                  Nominated
-                </span>
-              </div>
-            </div>
+            </Reveal>
 
             {/* PLAY SCHENGEN */}
-            <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-6">
-                  <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                    03
-                  </span>
-                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                    PLAY SCHENGEN
-                  </h3>
+            <Reveal delay={160}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6">
+                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
+                      03
+                    </span>
+                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                      PLAY SCHENGEN
+                    </h3>
+                  </div>
+                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
+                    Official Selection — Short Film
+                  </p>
                 </div>
-                <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                  Official Selection — Short Film
-                </p>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2020
+                  </span>
+                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
+                    Locarno / Chicago
+                  </span>
+                </div>
               </div>
-              <div className="mt-8 md:mt-0 text-right">
-                <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                  2020
-                </span>
-                <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                  Locarno / Chicago
-                </span>
-              </div>
-            </div>
+            </Reveal>
 
             {/* MIND OF MODERNISM */}
-            <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-6">
-                  <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                    04
-                  </span>
-                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                    MIND OF MODERNISM
-                  </h3>
+            <Reveal delay={240}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6">
+                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
+                      04
+                    </span>
+                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                      MIND OF MODERNISM
+                    </h3>
+                  </div>
+                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
+                    Feature Documentary — Premiered Haugesund
+                  </p>
                 </div>
-                <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                  Feature Documentary — Premiered Haugesund
-                </p>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2021
+                  </span>
+                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
+                    Premiere
+                  </span>
+                </div>
               </div>
-              <div className="mt-8 md:mt-0 text-right">
-                <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                  2021
-                </span>
-                <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                  Premiere
-                </span>
-              </div>
-            </div>
+            </Reveal>
 
             {/* HÁLDI */}
-            <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
-              <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-6">
-                  <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                    05
-                  </span>
-                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                    H&Aacute;LDI
-                  </h3>
+            <Reveal delay={320}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center gap-6">
+                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
+                      05
+                    </span>
+                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                      H&Aacute;LDI
+                    </h3>
+                  </div>
+                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
+                    Opening Exhibition — National Museum
+                  </p>
                 </div>
-                <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                  Opening Exhibition — National Museum
-                </p>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2023
+                  </span>
+                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
+                    Exhibition
+                  </span>
+                </div>
               </div>
-              <div className="mt-8 md:mt-0 text-right">
-                <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                  2023
-                </span>
-                <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                  Exhibition
-                </span>
-              </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -220,58 +235,66 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-white/40 block mb-8">
-                Technical Labs / R&amp;D
-              </span>
-              <h2 className="font-heading font-bold text-4xl md:text-6xl tracking-[0.2em] uppercase leading-tight mb-12">
-                SYNTHETIC
-                <br />
-                UNIVERSES
-              </h2>
-              <p className="font-sans italic text-xl leading-relaxed font-light text-white/60 max-w-lg mb-16">
-                We architect new physics, lighting, and textures that bypass the
-                &ldquo;uncanny valley&rdquo; to reach pure cinematic truth
-                through high-fidelity digital craftsmanship.
-              </p>
+              <Reveal>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-white/40 block mb-8">
+                  Technical Labs / R&amp;D
+                </span>
+                <h2 className="font-heading font-bold text-4xl md:text-6xl tracking-[0.2em] uppercase leading-tight mb-12">
+                  SYNTHETIC
+                  <br />
+                  UNIVERSES
+                </h2>
+                <p className="font-sans italic text-xl leading-relaxed font-light text-white/60 max-w-lg mb-16">
+                  We architect new physics, lighting, and textures that bypass the
+                  &ldquo;uncanny valley&rdquo; to reach pure cinematic truth
+                  through high-fidelity digital craftsmanship.
+                </p>
+              </Reveal>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="glass-panel p-8">
-                  <h4 className="font-sans uppercase text-[10px] tracking-[0.3em] mb-4 text-white">
-                    Unreal Integration
-                  </h4>
-                  <p className="font-sans italic text-sm text-white/40">
-                    Real-time photogrammetry workflows for architectural
-                    fidelity.
-                  </p>
-                </div>
-                <div className="glass-panel p-8">
-                  <h4 className="font-sans uppercase text-[10px] tracking-[0.3em] mb-4 text-white">
-                    Volumetric Capture
-                  </h4>
-                  <p className="font-sans italic text-sm text-white/40">
-                    Preserving human soul within coordinate-based 3D space.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:mt-32">
-              <div className="glass-panel p-16 aspect-square flex items-center justify-center relative">
-                <div className="text-center">
-                  <div className="w-24 h-px bg-white/20 mx-auto mb-8" />
-                  <span className="font-sans text-[8px] uppercase tracking-[1.5em] text-white/60 block mb-4">
-                    RENDER STATUS
-                  </span>
-                  <div className="font-heading font-bold text-7xl tracking-tighter text-white/90">
-                    99.9%
+                <Reveal delay={100}>
+                  <div className="glass-panel p-8">
+                    <h4 className="font-sans uppercase text-[10px] tracking-[0.3em] mb-4 text-white">
+                      Unreal Integration
+                    </h4>
+                    <p className="font-sans italic text-sm text-white/40">
+                      Real-time photogrammetry workflows for architectural
+                      fidelity.
+                    </p>
                   </div>
-                  <div className="w-24 h-px bg-white/20 mx-auto mt-8" />
-                </div>
-                <div className="absolute top-8 left-8 w-4 h-4 border-t border-l border-white/20" />
-                <div className="absolute bottom-8 right-8 w-4 h-4 border-b border-r border-white/20" />
-                <div className="absolute top-1/2 right-4 -translate-y-1/2 font-sans text-[8px] text-white/10 rotate-90 tracking-widest">
-                  PROTOCOL_8821
-                </div>
+                </Reveal>
+                <Reveal delay={200}>
+                  <div className="glass-panel p-8">
+                    <h4 className="font-sans uppercase text-[10px] tracking-[0.3em] mb-4 text-white">
+                      Volumetric Capture
+                    </h4>
+                    <p className="font-sans italic text-sm text-white/40">
+                      Preserving human soul within coordinate-based 3D space.
+                    </p>
+                  </div>
+                </Reveal>
               </div>
             </div>
+            <Reveal delay={150}>
+              <div className="lg:mt-32">
+                <div className="glass-panel p-16 aspect-square flex items-center justify-center relative">
+                  <div className="text-center">
+                    <div className="w-24 h-px bg-white/20 mx-auto mb-8" />
+                    <span className="font-sans text-[8px] uppercase tracking-[1.5em] text-white/60 block mb-4">
+                      RENDER STATUS
+                    </span>
+                    <div className="font-heading font-bold text-7xl tracking-tighter text-white/90">
+                      99.9%
+                    </div>
+                    <div className="w-24 h-px bg-white/20 mx-auto mt-8" />
+                  </div>
+                  <div className="absolute top-8 left-8 w-4 h-4 border-t border-l border-white/20" />
+                  <div className="absolute bottom-8 right-8 w-4 h-4 border-b border-r border-white/20" />
+                  <div className="absolute top-1/2 right-4 -translate-y-1/2 font-sans text-[8px] text-white/10 rotate-90 tracking-widest">
+                    PROTOCOL_8821
+                  </div>
+                </div>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
   title: "Tech | INTHEMOOD PICTURES",
@@ -12,23 +13,25 @@ export default function Tech() {
     <div className="bg-background min-h-screen">
       {/* ── Hero Section ── */}
       <section className="px-8 md:px-16 pt-32 mb-40">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-          {/* Left — Headline */}
-          <div className="md:col-span-8">
-            <h1 className="text-white font-heading font-bold text-4xl sm:text-6xl md:text-8xl tracking-[0.2em] uppercase leading-tight mb-12">
-              We Can Deliver: Synthetic Universes
-            </h1>
-          </div>
+        <Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            {/* Left — Headline */}
+            <div className="md:col-span-8">
+              <h1 className="text-white font-heading font-bold text-4xl sm:text-6xl md:text-8xl tracking-[0.2em] uppercase leading-tight mb-12">
+                We Can Deliver: Synthetic Universes
+              </h1>
+            </div>
 
-          {/* Right — Body text */}
-          <div className="md:col-span-4">
-            <p className="font-sans font-light italic text-xl md:text-2xl leading-relaxed text-white/80 border-l border-white/10 pl-8">
-              Our default is to provide content for cinema and broadcast native
-              resolution and fidelity. When it comes to length and consistency,
-              we are unlimited.
-            </p>
+            {/* Right — Body text */}
+            <div className="md:col-span-4">
+              <p className="font-sans font-light italic text-xl md:text-2xl leading-relaxed text-white/80 border-l border-white/10 pl-8">
+                Our default is to provide content for cinema and broadcast native
+                resolution and fidelity. When it comes to length and consistency,
+                we are unlimited.
+              </p>
+            </div>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       {/* ── Main Visual: The Void Frame ── */}
@@ -79,111 +82,121 @@ export default function Tech() {
       </section>
 
       {/* ── Quote Section ── */}
-      <section className="px-8 md:px-16 mb-40">
-        <div className="max-w-4xl mx-auto text-center py-20 bg-[#1c1b1b] border-y border-white/5">
-          <blockquote className="px-8 md:px-16">
-            <p className="font-heading font-bold text-2xl sm:text-3xl md:text-5xl tracking-[0.1em] uppercase leading-relaxed text-white mb-8">
-              &ldquo;The future will be better tomorrow&rdquo;
-            </p>
-            <cite className="font-sans font-light italic text-lg text-white/60 not-italic">
-              — Dan Quayle
-            </cite>
-          </blockquote>
-        </div>
-      </section>
+      <Reveal>
+        <section className="px-8 md:px-16 mb-40">
+          <div className="max-w-4xl mx-auto text-center py-20 bg-[#1c1b1b] border-y border-white/5">
+            <blockquote className="px-8 md:px-16">
+              <p className="font-heading font-bold text-2xl sm:text-3xl md:text-5xl tracking-[0.1em] uppercase leading-relaxed text-white mb-8">
+                &ldquo;The future will be better tomorrow&rdquo;
+              </p>
+              <cite className="font-sans font-light italic text-lg text-white/60 not-italic">
+                — Dan Quayle
+              </cite>
+            </blockquote>
+          </div>
+        </section>
+      </Reveal>
 
       {/* ── Tech Capabilities: Bento Grid ── */}
       <section className="px-8 md:px-16 mb-40">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px]">
           {/* Card 1: Neural Architecture */}
-          <div className="aspect-square flex flex-col items-center justify-center text-center p-12 md:p-16 bg-[#2a2a2a]">
-            <svg
-              width="64"
-              height="64"
-              viewBox="0 0 64 64"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className="text-white/60 mb-10"
-            >
-              <circle cx="32" cy="12" r="5" />
-              <circle cx="12" cy="52" r="5" />
-              <circle cx="52" cy="52" r="5" />
-              <circle cx="32" cy="36" r="3" />
-              <line x1="32" y1="17" x2="32" y2="33" />
-              <line x1="29" y1="37" x2="15" y2="48" />
-              <line x1="35" y1="37" x2="49" y2="48" />
-              <line x1="12" y1="52" x2="52" y2="52" />
-            </svg>
-            <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
-              Neural Architecture
-            </h3>
-            <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
-              Proprietary engines designed for pixel-perfect environmental
-              generation.
-            </p>
-          </div>
+          <Reveal delay={0}>
+            <div className="aspect-square flex flex-col items-center justify-center text-center p-12 md:p-16 bg-[#2a2a2a]">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="text-white/60 mb-10"
+              >
+                <circle cx="32" cy="12" r="5" />
+                <circle cx="12" cy="52" r="5" />
+                <circle cx="52" cy="52" r="5" />
+                <circle cx="32" cy="36" r="3" />
+                <line x1="32" y1="17" x2="32" y2="33" />
+                <line x1="29" y1="37" x2="15" y2="48" />
+                <line x1="35" y1="37" x2="49" y2="48" />
+                <line x1="12" y1="52" x2="52" y2="52" />
+              </svg>
+              <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
+                Neural Architecture
+              </h3>
+              <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
+                Proprietary engines designed for pixel-perfect environmental
+                generation.
+              </p>
+            </div>
+          </Reveal>
 
           {/* Card 2: Unbounded Scaling */}
-          <div className="aspect-square flex flex-col items-center justify-center text-center p-12 md:p-16 bg-[#1c1b1b]">
-            <svg
-              width="64"
-              height="64"
-              viewBox="0 0 64 64"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className="text-white/60 mb-10"
-            >
-              <path d="M32 4 L60 32 L32 60 L4 32 Z" />
-              <path d="M32 16 L48 32 L32 48 L16 32 Z" />
-              <circle cx="32" cy="32" r="4" />
-            </svg>
-            <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
-              Unbounded Scaling
-            </h3>
-            <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
-              From individual particles to planetary systems without loss of
-              detail.
-            </p>
-          </div>
+          <Reveal delay={120}>
+            <div className="aspect-square flex flex-col items-center justify-center text-center p-12 md:p-16 bg-[#1c1b1b]">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="text-white/60 mb-10"
+              >
+                <path d="M32 4 L60 32 L32 60 L4 32 Z" />
+                <path d="M32 16 L48 32 L32 48 L16 32 Z" />
+                <circle cx="32" cy="32" r="4" />
+              </svg>
+              <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
+                Unbounded Scaling
+              </h3>
+              <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
+                From individual particles to planetary systems without loss of
+                detail.
+              </p>
+            </div>
+          </Reveal>
 
           {/* Card 3: Native Delivery */}
-          <div className="aspect-square flex flex-col items-center justify-center text-center p-12 md:p-16 bg-[#2a2a2a]">
-            <svg
-              width="64"
-              height="64"
-              viewBox="0 0 64 64"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className="text-white/60 mb-10"
-            >
-              <rect x="6" y="10" width="52" height="34" />
-              <line x1="6" y1="44" x2="58" y2="44" />
-              <line x1="24" y1="50" x2="40" y2="50" />
-              <line x1="32" y1="44" x2="32" y2="50" />
-              <polygon points="24,22 24,36 40,29" fill="currentColor" stroke="none" />
-            </svg>
-            <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
-              Native Delivery
-            </h3>
-            <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
-              Seamless integration into modern cinema and broadcast workflows.
-            </p>
-          </div>
+          <Reveal delay={240}>
+            <div className="aspect-square flex flex-col items-center justify-center text-center p-12 md:p-16 bg-[#2a2a2a]">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="text-white/60 mb-10"
+              >
+                <rect x="6" y="10" width="52" height="34" />
+                <line x1="6" y1="44" x2="58" y2="44" />
+                <line x1="24" y1="50" x2="40" y2="50" />
+                <line x1="32" y1="44" x2="32" y2="50" />
+                <polygon points="24,22 24,36 40,29" fill="currentColor" stroke="none" />
+              </svg>
+              <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
+                Native Delivery
+              </h3>
+              <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
+                Seamless integration into modern cinema and broadcast workflows.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
       {/* ── CTA Section ── */}
-      <section className="px-8 md:px-16 flex justify-center mb-24">
-        <Link
-          href="/contact"
-          className="rounded-none bg-white text-[#131313] px-12 py-6 font-heading font-bold text-sm tracking-[0.4em] uppercase hover:bg-[#d4d4d4] transition-colors"
-        >
-          Initialize Connection
-        </Link>
-      </section>
+      <Reveal>
+        <section className="px-8 md:px-16 flex justify-center mb-24">
+          <Link
+            href="/contact"
+            className="rounded-none bg-white text-[#131313] px-12 py-6 font-heading font-bold text-sm tracking-[0.4em] uppercase hover:bg-[#d4d4d4] transition-colors"
+          >
+            Initialize Connection
+          </Link>
+        </section>
+      </Reveal>
     </div>
   );
 }
