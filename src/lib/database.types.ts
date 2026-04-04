@@ -1,11 +1,3 @@
-export type Json =
-  | string
-  | number
-  | boolean
-  | null
-  | { [key: string]: Json | undefined }
-  | Json[]
-
 export type Database = {
   __InternalSupabase: {
     PostgrestVersion: "14.5"
@@ -148,6 +140,4 @@ export type Tables<
   TableName extends keyof DefaultSchema["Tables"]
 > = DefaultSchema["Tables"][TableName]["Row"]
 
-export type Production = Tables<"productions">
 export type News = Tables<"news">
-export type ContactSubmission = Tables<"contact_submissions">

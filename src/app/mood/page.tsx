@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Mood | INTHEMOOD PICTURES",
@@ -7,8 +8,7 @@ export const metadata: Metadata = {
 export default function Mood() {
   return (
     <div>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/mood.svg" alt="Mood" className="mx-auto mb-4" />
+      <Image src="/mood.svg" alt="Mood" width={400} height={300} className="mx-auto mb-4" />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/reveal";
 
@@ -37,10 +38,10 @@ export default function Tech() {
       {/* ── Main Visual: The Void Frame ── */}
       <section className="w-full h-[400px] md:h-[819px] bg-[#0e0e0e] relative overflow-hidden mb-40">
         {/* Cinematic background image */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-xFrKG8ZvwcmL7zXVzYrnoF4pEWPT4Qhksjwpp_ZbQBCxZTCcxT-wcwdws_x-3-odz-qHN7ojsg5EHzOrpDqCTlveBS715xPen9SFElA_vqpJ7AEvXC8PV_p4lGRnJYSsDCzuC4gK9Q1OVrFwzFGrH9vN3Fg_ONIkRCoYmTxktOzBh1Xj4Df4QpF6zQTbrpOzSGOHJSnQemBKefGDBsBTqSqR8_c_JqElA00y8UOGi5Q32rI7wDq9P42CEe5pmqd_G5s_tLvhJbw"
           alt="Abstract cinematic textures"
+          fill
           className="absolute inset-0 w-full h-full object-cover grayscale opacity-40 mix-blend-screen"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent" />
