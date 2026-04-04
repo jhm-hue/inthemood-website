@@ -19,6 +19,9 @@ node_modules
 .next/
 out/
 
+# TypeScript
+*.tsbuildinfo
+
 # Bun
 # bun.lock should be committed for reproducible installs
 
