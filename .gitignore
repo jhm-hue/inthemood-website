@@ -1,5 +1,7 @@
-# ENVIRONEMNT VARIABLES
+# Environment variables
 .env
+.env.local
+.env*.local
 
 # Logs
 logs
@@ -10,10 +12,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
-dist
-dist-ssr
-*.local
+
+# Next.js
+.next/
+out/
+
+# Bun
+bun.lock
 
 # Editor directories and files
 .vscode/*

@@ -1,102 +1,79 @@
-# 🎬 INTHEMOOD PICTURES Website
+# INTHEMOOD PICTURES
 
-A modern company website for **INTHEMOOD PICTURES**, a small movie and series production company.  
-Built with **React + Vite**, powered by **Supabase**, and deployed on **Vercel**.
+Company website for **INTHEMOOD PICTURES** — a Norwegian production company and high-end tech house.
 
----
-
-## 🚀 Tech Stack
-
-- **Frontend Framework**: [React](https://react.dev/) (via [Vite](https://vitejs.dev/))
-- **Styling**: Tailwind CSS v4
-- **Backend / Database**: [Supabase](https://supabase.com/) (Postgres, Auth, Storage)
-- **Deployment**: [Vercel](https://vercel.com/) (CI/CD from GitHub)
-- **Version Control**: [GitHub](https://github.com/)
-
----
-
-## ⚙️ Getting Started (Local Development)
-
-### 1. Clone the repository
+## Quick Start
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/inthemood-pictures-website.git
-cd inthemood-pictures-website
+# 1. Clone
+git clone https://github.com/jhm-hue/inthemood-website.git
+cd inthemood-website
+
+# 2. Install (requires Bun — https://bun.sh)
+bun install
+
+# 3. Set up environment
+cp .env.example .env.local
+# Then fill in your Supabase credentials
+
+# 4. Run
+bun run dev
 ```
 
-### 2. Install dependencies
+Open [http://localhost:3000](http://localhost:3000).
 
-```bash
-npm install
+## Environment Variables
+
+Create a `.env.local` file:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-### 3. Configure environment variables
+## Scripts
 
-Create a `.env` file in the project root:
+| Command | Description |
+|---|---|
+| `bun run dev` | Start dev server (Turbopack) |
+| `bun run build` | Production build |
+| `bun run start` | Serve production build |
+| `bun run lint` | Run ESLint |
 
-```bash
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key
-```
+## Tech Stack
 
-⚠️ Variables must be prefixed with `VITE_` to be exposed in Vite.
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
+- **Language**: [TypeScript 6](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) + [shadcn/ui](https://ui.shadcn.com/)
+- **Backend**: [Supabase](https://supabase.com/) (PostgreSQL, Auth, Storage)
+- **Package Manager**: [Bun](https://bun.sh/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-### 4. Start the dev server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173).
-
----
-
-## 📦 Deployment
-
-This project is hosted on **Vercel**.
-
-1. Push your repo to GitHub.
-2. In [Vercel](https://vercel.com/), import the GitHub repo as a new project.
-3. Add environment variables:
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
-4. Deploy 🚀
-
----
-
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 src/
- ├─ assets/             # Images, posters, logos
- ├─ components/         # Reusable components
- │   ├─ Navbar.jsx
- │   ├─ Footer.jsx
- │   ├─ ProductionCard.jsx
- │   └─ NewsCard.jsx
- ├─ pages/              # Full-page views
- │   ├─ Home.jsx
- │   ├─ About.jsx
- │   ├─ Productions.jsx
- │   ├─ News.jsx
- │   └─ Contact.jsx
- ├─ styles/             # CSS files
- │   ├─ global.css
- │   └─ components.css
- ├─ utils/              # Helper funcitons
- ├─ supabaseClient.js   # Supabase connection
- ├─ App.jsx             # Main app with routes
- └─ main.jsx            # Entry point
+├── app/                    # Routes (Next.js App Router)
+│   ├── layout.tsx          # Root layout (nav, fonts, analytics)
+│   ├── globals.css         # Tailwind theme + design tokens
+│   ├── page.tsx            # Home (/)
+│   ├── film/page.tsx       # /film
+│   ├── tech/page.tsx       # /tech
+│   ├── about/page.tsx      # /about
+│   ├── mood/page.tsx       # /mood
+│   └── contact/page.tsx    # /contact
+├── components/
+│   ├── ui/                 # shadcn/ui components
+│   └── navigation.tsx      # Site navigation
+├── lib/
+│   ├── utils.ts            # Utility helpers
+│   └── supabase.ts         # Supabase client
+└── types/                  # Shared TypeScript types
 ```
 
----
-
-## 🛠️ Database Setup (Supabase)
-
-In the Supabase SQL editor, run:
+## Database (Supabase)
 
 ```sql
--- Productions (Movies & Series)
 create table productions (
   id bigint generated always as identity primary key,
   title text not null,
@@ -108,7 +85,6 @@ create table productions (
   created_at timestamp default now()
 );
 
--- News / Updates
 create table news (
   id bigint generated always as identity primary key,
   title text not null,
@@ -118,30 +94,23 @@ create table news (
 );
 ```
 
-You can insert initial data via the Supabase Table Editor.
+## Deployment
+
+Hosted on **Vercel** with automatic deploys from GitHub.
+
+1. Push to GitHub
+2. Import the repo in [Vercel](https://vercel.com/)
+3. Add environment variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`)
+4. Deploy
+
+## Roadmap
+
+- [ ] Supabase storage for movie posters and stills
+- [ ] Admin authentication for content management
+- [ ] Trailer embeds (YouTube/Vimeo)
+- [ ] Press-kit downloads
+- [ ] Blog/news updates
 
 ---
 
-## 📌 Features
-
-- Showcase company productions with posters, trailers, and descriptions.
-- News/updates section for press releases and announcements.
-- Company info & contact form.
-- Supabase database for dynamic content management.
-- Deployed and continuously updated via GitHub + Vercel.
-
----
-
-## 📸 Roadmap
-
-- [ ] Add Supabase storage integration for hosting movie posters & stills.
-- [ ] Add authentication for admin content management.
-- [ ] Add trailer embeds (YouTube/Vimeo).
-- [ ] Add press-kit download section.
-- [ ] Add blog-style updates.
-
----
-
-## 👨‍💻 Authors
-
-Developed by **INTHEMOOD PICTURES** with ❤️
+Developed by **INTHEMOOD PICTURES**
