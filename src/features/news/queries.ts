@@ -1,8 +1,8 @@
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 import type { News } from "@/lib/database.types";
 
 export async function getPublishedNews(): Promise<News[]> {
-  const { data, error } = await supabase
+  const { data, error } = await getSupabase()
     .from("news")
     .select("*")
     .eq("published", true)

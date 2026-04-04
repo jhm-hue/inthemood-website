@@ -1,6 +1,6 @@
 "use server";
 
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 
 export interface ContactFormState {
   success: boolean;
@@ -24,7 +24,7 @@ export async function submitContactForm(
     return { success: false, error: "Please enter a valid email address." };
   }
 
-  const { error } = await supabase
+  const { error } = await getSupabase()
     .from("contact_submissions")
     .insert({ name: name.trim(), email: email.trim(), message: message.trim() });
 
