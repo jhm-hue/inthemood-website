@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "News | INTHEMOOD PICTURES",
 };
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function News() {
   const articles = await getPublishedNews();
