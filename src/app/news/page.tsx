@@ -58,18 +58,18 @@ export default async function News() {
             No news articles yet.
           </p>
         )}
-      </div>
 
-      {/* EU MEDIA Logo — required by funding agreement */}
-      <div className="mt-24 max-w-3xl">
-        <Image
-          src="/eu-media-logo.png"
-          alt="Co-funded by the European Union — Creative Europe MEDIA"
-          width={200}
-          height={69}
-          className="invert opacity-70"
-          style={{ height: "auto" }}
-        />
+        {/* EU MEDIA Logo — required by funding agreement */}
+        <div>
+          <Image
+            src="/eu-media-logo.png"
+            alt="Co-funded by the European Union — Creative Europe MEDIA"
+            width={200}
+            height={69}
+            className="invert opacity-70"
+            style={{ height: "auto" }}
+          />
+        </div>
       </div>
     </div>
   );
