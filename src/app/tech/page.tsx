@@ -15,7 +15,7 @@ export default function Tech() {
       {/* ── Hero Section ── */}
       <section className="px-8 md:px-16 pt-32 mb-40">
         <Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
             {/* Left — Headline */}
             <div className="md:col-span-8">
               <h1 className="text-white font-heading font-bold text-5xl sm:text-7xl md:text-9xl tracking-[0.2em] uppercase leading-tight mb-4">
