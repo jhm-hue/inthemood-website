@@ -20,7 +20,7 @@ export function ContactForm() {
         <h3 className="font-heading font-bold text-2xl tracking-[0.1em] uppercase text-white mb-4">
           Message Sent
         </h3>
-        <p className="font-sans font-light italic text-white/60">
+        <p className="font-sans font-light text-white/60">
           Thank you for reaching out. We will get back to you soon.
         </p>
       </div>
@@ -41,7 +41,7 @@ export function ContactForm() {
           name="name"
           required
           placeholder="Your Name"
-          className="w-full bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-sans font-light italic px-0 py-3 transition-colors placeholder:text-white/20"
+          className="w-full bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-sans font-light px-0 py-3 transition-colors placeholder:text-white/20"
         />
       </div>
       <div className="relative group">
@@ -53,7 +53,7 @@ export function ContactForm() {
           name="email"
           required
           placeholder="email@domain.com"
-          className="w-full bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-sans font-light italic px-0 py-3 transition-colors placeholder:text-white/20"
+          className="w-full bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-sans font-light px-0 py-3 transition-colors placeholder:text-white/20"
         />
       </div>
       <div className="relative group">
@@ -65,7 +65,7 @@ export function ContactForm() {
           required
           placeholder="Briefly describe your project or reason for contact"
           rows={3}
-          className="w-full bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-sans font-light italic px-0 py-3 transition-colors resize-none placeholder:text-white/20"
+          className="w-full bg-transparent border-0 border-b border-white/10 focus:border-white focus:ring-0 text-white font-sans font-light px-0 py-3 transition-colors resize-none placeholder:text-white/20"
         />
       </div>
       <div className="pt-6">

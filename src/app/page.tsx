@@ -47,12 +47,12 @@ export default function Home() {
                 OUR STORY
               </h2>
               <div className="space-y-12 max-w-3xl">
-                <p className="font-sans italic text-2xl md:text-3xl leading-relaxed font-light text-white/90">
+                <p className="font-sans text-2xl md:text-3xl leading-relaxed font-light text-white/90">
                   INTHEMOOD is a Norwegian production company and high-end tech
                   house with an opportunistic mindset. We are based in Oslo. We
                   believe the future will be different than today.
                 </p>
-                <p className="font-sans italic text-xl md:text-2xl leading-relaxed font-light text-white/50">
+                <p className="font-sans text-xl md:text-2xl leading-relaxed font-light text-white/50">
                   By embracing intentional asymmetry and the luxury of negative
                   space, INTHEMOOD PICTURES defines the next era of architectural
                   cinema through technical precision.
@@ -85,52 +85,20 @@ export default function Home() {
                 FILMOGRAPHY
               </h2>
               <p className="font-sans text-xs uppercase tracking-widest text-white/40">
-                2019 — 2024 Collection
+                2019 — 2024
               </p>
             </div>
           </Reveal>
 
           <div className="space-y-6">
-            {/* MERCY */}
+            {/* CATTLE HILL */}
             <Reveal delay={0}>
               <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-center gap-6">
-                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                      01
-                    </span>
-                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                      MERCY
-                    </h3>
-                  </div>
-                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                    Nominated for the Golden Bear — Feature Film
-                  </p>
-                </div>
-                <div className="mt-8 md:mt-0 text-right">
-                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                    2012
-                  </span>
-                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                    Berlin Selection
-                  </span>
-                </div>
-              </div>
-            </Reveal>
-
-            {/* CATTLE HILL */}
-            <Reveal delay={80}>
-              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
-                <div className="flex flex-col gap-4">
-                  <div className="flex items-center gap-6">
-                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                      02
-                    </span>
-                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                      CATTLE HILL
-                    </h3>
-                  </div>
-                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    CATTLE HILL
+                  </h3>
+                  <p className="font-sans font-light text-lg text-white/50">
                     Best Children&apos;s Film — Amanda Nominated
                   </p>
                 </div>
@@ -145,25 +113,58 @@ export default function Home() {
               </div>
             </Reveal>
 
-            {/* PLAY SCHENGEN */}
-            <Reveal delay={160}>
+            {/* MERCY */}
+            <Reveal delay={60}>
               <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-center gap-6">
-                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                      03
-                    </span>
-                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                      PLAY SCHENGEN
-                    </h3>
-                  </div>
-                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    MERCY
+                  </h3>
+                  <p className="font-sans font-light text-lg text-white/50">
+                    Nominated for the Golden Bear — Feature Film
+                  </p>
+                </div>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2024
+                  </span>
+                  <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
+                    Berlin Selection
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* NOW I AM ALSO HERE */}
+            <Reveal delay={120}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    NOW I AM ALSO HERE
+                  </h3>
+                </div>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2022
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* PLAY SCHENGEN */}
+            <Reveal delay={180}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    PLAY SCHENGEN
+                  </h3>
+                  <p className="font-sans font-light text-lg text-white/50">
                     Official Selection — Short Film
                   </p>
                 </div>
                 <div className="mt-8 md:mt-0 text-right">
                   <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                    2020
+                    2022
                   </span>
                   <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
                     Locarno / Chicago
@@ -172,20 +173,31 @@ export default function Home() {
               </div>
             </Reveal>
 
-            {/* MIND OF MODERNISM */}
+            {/* PLATTFORM */}
             <Reveal delay={240}>
               <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-center gap-6">
-                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                      04
-                    </span>
-                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                      MIND OF MODERNISM
-                    </h3>
-                  </div>
-                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                    Feature Documentary — Premiered Haugesund
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    PLATTFORM
+                  </h3>
+                </div>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2021
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* HÁLDI */}
+            <Reveal delay={300}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    H&Aacute;LDI
+                  </h3>
+                  <p className="font-sans font-light text-lg text-white/50">
+                    Opening Exhibition — National Museum
                   </p>
                 </div>
                 <div className="mt-8 md:mt-0 text-right">
@@ -193,34 +205,61 @@ export default function Home() {
                     2021
                   </span>
                   <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                    Premiere
+                    Exhibition
                   </span>
                 </div>
               </div>
             </Reveal>
 
-            {/* HÁLDI */}
-            <Reveal delay={320}>
+            {/* APART */}
+            <Reveal delay={360}>
               <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
                 <div className="flex flex-col gap-4">
-                  <div className="flex items-center gap-6">
-                    <span className="font-heading text-sm tracking-[0.4em] text-white/30 uppercase">
-                      05
-                    </span>
-                    <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
-                      H&Aacute;LDI
-                    </h3>
-                  </div>
-                  <p className="font-sans italic font-light text-lg text-white/50 md:ml-16">
-                    Opening Exhibition — National Museum
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    APART
+                  </h3>
+                </div>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2020
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* I WAS A KILLER FOR THE POPE */}
+            <Reveal delay={420}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    I WAS A KILLER FOR THE POPE
+                  </h3>
+                </div>
+                <div className="mt-8 md:mt-0 text-right">
+                  <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
+                    2020
+                  </span>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* MIND OF MODERNISM */}
+            <Reveal delay={480}>
+              <div className="glass-panel p-10 md:p-16 flex flex-col md:flex-row justify-between items-center group cursor-pointer hover:bg-white/[0.05] transition-all duration-500">
+                <div className="flex flex-col gap-4">
+                  <h3 className="font-heading font-bold text-4xl md:text-6xl tracking-widest uppercase text-white">
+                    MIND OF MODERNISM
+                  </h3>
+                  <p className="font-sans font-light text-lg text-white/50">
+                    Feature Documentary — Premiered Haugesund
                   </p>
                 </div>
                 <div className="mt-8 md:mt-0 text-right">
                   <span className="font-heading text-xl tracking-[0.2em] text-white/80 block">
-                    2023
+                    2020
                   </span>
                   <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-white/40">
-                    Exhibition
+                    Premiere
                   </span>
                 </div>
               </div>
@@ -244,7 +283,7 @@ export default function Home() {
                   <br />
                   UNIVERSES
                 </h2>
-                <p className="font-sans italic text-xl leading-relaxed font-light text-white/60 max-w-lg mb-16">
+                <p className="font-sans text-xl leading-relaxed font-light text-white/60 max-w-lg mb-16">
                   We architect new physics, lighting, and textures that bypass the
                   &ldquo;uncanny valley&rdquo; to reach pure cinematic truth
                   through high-fidelity digital craftsmanship.
@@ -256,7 +295,7 @@ export default function Home() {
                     <h4 className="font-sans uppercase text-[10px] tracking-[0.3em] mb-4 text-white">
                       Unreal Integration
                     </h4>
-                    <p className="font-sans italic text-sm text-white/40">
+                    <p className="font-sans text-sm text-white/40">
                       Real-time photogrammetry workflows for architectural
                       fidelity.
                     </p>
@@ -267,7 +306,7 @@ export default function Home() {
                     <h4 className="font-sans uppercase text-[10px] tracking-[0.3em] mb-4 text-white">
                       Volumetric Capture
                     </h4>
-                    <p className="font-sans italic text-sm text-white/40">
+                    <p className="font-sans text-sm text-white/40">
                       Preserving human soul within coordinate-based 3D space.
                     </p>
                   </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getPublishedNews } from "@/features/news/queries";
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export default async function News() {
               {article.title}
             </h2>
             {article.excerpt && (
-              <p className="font-sans font-light italic text-lg text-white/60 mt-4 leading-relaxed">
+              <p className="font-sans font-light text-lg text-white/60 mt-4 leading-relaxed">
                 {article.excerpt}
               </p>
             )}
@@ -53,10 +54,22 @@ export default async function News() {
         ))}
 
         {articles.length === 0 && (
-          <p className="font-sans font-light italic text-white/40">
+          <p className="font-sans font-light text-white/40">
             No news articles yet.
           </p>
         )}
+      </div>
+
+      {/* EU MEDIA Logo — required by funding agreement */}
+      <div className="mt-24 max-w-3xl">
+        <Image
+          src="/eu-media-logo.png"
+          alt="Co-funded by the European Union — Creative Europe MEDIA"
+          width={200}
+          height={69}
+          className="invert opacity-70"
+          style={{ height: "auto" }}
+        />
       </div>
     </div>
   );

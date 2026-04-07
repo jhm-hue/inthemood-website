@@ -15,7 +15,7 @@ export default function Contact() {
           <h1 className="text-6xl md:text-8xl font-heading font-bold tracking-[0.2em] uppercase text-white mb-6">
             CONTACT
           </h1>
-          <p className="font-sans font-light italic text-white/70 text-lg tracking-wide max-w-xl mx-auto">
+          <p className="font-sans font-light text-white/70 text-lg tracking-wide max-w-xl mx-auto">
             We are always looking for the next story to tell. Reach out for
             collaborations, press inquiries, or general thoughts on cinema.
           </p>
@@ -31,9 +31,12 @@ export default function Contact() {
               <h2 className="font-heading font-bold uppercase tracking-[0.15em] text-xs text-white mb-4">
                 Leadership
               </h2>
-              <div className="font-sans font-light italic text-white/80 leading-relaxed">
-                <span className="font-bold uppercase tracking-widest text-[10px] block mb-1 not-italic">
-                  INGVILD EVJEMO, CEO and Producer
+              <div className="font-sans font-light text-white/80 leading-relaxed">
+                <span className="font-bold uppercase tracking-widest text-[10px] block">
+                  INGVILD EVJEMO
+                </span>
+                <span className="font-bold uppercase tracking-widest text-[10px] block mb-1">
+                  CEO and Producer
                 </span>
                 ingvild@inthemoodfilm.com
                 <br />
@@ -45,7 +48,7 @@ export default function Contact() {
               <h2 className="font-heading font-bold uppercase tracking-[0.15em] text-xs text-white mb-4">
                 General Inquiries
               </h2>
-              <p className="font-sans font-light italic text-white/80">
+              <p className="font-sans font-light text-white/80">
                 post@inthemoodfilm.com
               </p>
             </section>
@@ -54,10 +57,8 @@ export default function Contact() {
               <h2 className="font-heading font-bold uppercase tracking-[0.15em] text-xs text-white mb-4">
                 The Studio
               </h2>
-              <div className="font-sans font-light italic text-white/80 leading-relaxed">
+              <div className="font-sans font-light text-white/80 leading-relaxed">
                 INTHEMOOD PICTURES
-                <br />
-                Rathkes gate 9 A
                 <br />
                 0558 Oslo, Norway
               </div>
@@ -72,7 +73,7 @@ export default function Contact() {
                   href="https://www.instagram.com/inthemood_film/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-sans font-light italic text-white/70 hover:text-white transition-colors duration-500 underline decoration-white/20"
+                  className="font-sans font-light text-white/70 hover:text-white transition-colors duration-500 underline decoration-white/20"
                 >
                   Instagram
                 </a>

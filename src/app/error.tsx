@@ -25,7 +25,7 @@ export default function Error({
           Went Wrong
         </h1>
 
-        <p className="font-sans font-light italic text-base md:text-lg text-[var(--on-surface)] leading-relaxed max-w-md mx-auto">
+        <p className="font-sans font-light text-base md:text-lg text-[var(--on-surface)] leading-relaxed max-w-md mx-auto">
           An unexpected error occurred. The scene could not be loaded.
         </p>
 

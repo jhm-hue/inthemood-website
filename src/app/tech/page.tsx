@@ -18,19 +18,45 @@ export default function Tech() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
             {/* Left — Headline */}
             <div className="md:col-span-8">
-              <h1 className="text-white font-heading font-bold text-4xl sm:text-6xl md:text-8xl tracking-[0.2em] uppercase leading-tight mb-12">
-                We Can Deliver: Synthetic Universes
+              <h1 className="text-white font-heading font-bold text-5xl sm:text-7xl md:text-9xl tracking-[0.2em] uppercase leading-tight mb-4">
+                STUDIO
               </h1>
+              <p className="font-sans text-xs uppercase tracking-[0.3em] text-white/50 mb-12">
+                WE CAN DELIVER
+              </p>
             </div>
 
             {/* Right — Body text */}
             <div className="md:col-span-4">
-              <p className="font-sans font-light italic text-xl md:text-2xl leading-relaxed text-white/80 border-l border-white/10 pl-8">
-                Our default is to provide content for cinema and broadcast native
-                resolution and fidelity. When it comes to length and consistency,
-                we are unlimited.
+              <p className="font-sans font-light text-xl md:text-2xl leading-relaxed text-white/80 border-l border-white/10 pl-8">
+                INTHEMOOD STUDIO,- a high-end tech house with an opportunistic
+                mindset. We love art and storytelling. We believe the future
+                will be different than today. In the years that lies ahead, the
+                past will provide insight to the path best suitable for achieving
+                the curve that will land us on the perfect wave.
               </p>
             </div>
+          </div>
+        </Reveal>
+      </section>
+
+      {/* ── Team Section ── */}
+      <section className="px-8 md:px-16 mb-40">
+        <Reveal>
+          <div className="max-w-4xl">
+            <h2 className="font-heading font-bold tracking-[0.4em] uppercase text-sm text-white/60 mb-12">
+              TEAM
+            </h2>
+            <p className="font-sans font-light text-xl md:text-2xl leading-relaxed text-white/80">
+              The team holds a broad capacity with long experience from both
+              media, film, commercials, tech, entrepreneurship, art and digital
+              integration. We know that R&amp;D is the name of the game, so we
+              are committed to allocating a majority of our resources to
+              innovation. We are collaborating with various industries such as
+              film, art, museums and business. We can deliver short and long
+              formats in high quality for cinema, TV or local use. Let us hear
+              from you!
+            </p>
           </div>
         </Reveal>
       </section>
@@ -90,7 +116,7 @@ export default function Tech() {
               <p className="font-heading font-bold text-2xl sm:text-3xl md:text-5xl tracking-[0.1em] uppercase leading-relaxed text-white mb-8">
                 &ldquo;The future will be better tomorrow&rdquo;
               </p>
-              <cite className="font-sans font-light italic text-lg text-white/60 not-italic">
+              <cite className="font-sans font-light text-lg text-white/60">
                 — Dan Quayle
               </cite>
             </blockquote>
@@ -125,7 +151,7 @@ export default function Tech() {
               <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
                 Neural Architecture
               </h3>
-              <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
+              <p className="font-sans font-light text-lg text-white/60 max-w-xs">
                 Proprietary engines designed for pixel-perfect environmental
                 generation.
               </p>
@@ -151,7 +177,7 @@ export default function Tech() {
               <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
                 Unbounded Scaling
               </h3>
-              <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
+              <p className="font-sans font-light text-lg text-white/60 max-w-xs">
                 From individual particles to planetary systems without loss of
                 detail.
               </p>
@@ -179,7 +205,7 @@ export default function Tech() {
               <h3 className="font-heading font-bold text-2xl md:text-3xl tracking-[0.15em] uppercase text-white mb-4">
                 Native Delivery
               </h3>
-              <p className="font-sans font-light italic text-lg text-white/60 max-w-xs">
+              <p className="font-sans font-light text-lg text-white/60 max-w-xs">
                 Seamless integration into modern cinema and broadcast workflows.
               </p>
             </div>

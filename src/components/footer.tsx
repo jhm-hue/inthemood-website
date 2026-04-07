@@ -6,7 +6,7 @@ export function Footer() {
       <div className="text-lg font-bold tracking-[0.2em] text-white font-heading">
         INTHEMOOD PICTURES
       </div>
-      <div className="flex gap-8 font-sans italic font-light text-xs tracking-widest text-white/40">
+      <div className="flex gap-8 font-sans font-light text-xs tracking-widest text-white/40">
         <a
           href="https://www.instagram.com/inthemood_film/"
           target="_blank"
@@ -19,7 +19,7 @@ export function Footer() {
           CONTACT
         </Link>
       </div>
-      <div className="font-sans italic font-light text-xs tracking-widest text-white/40">
+      <div className="font-sans font-light text-xs tracking-widest text-white/40">
         &copy; 2026 INTHEMOOD PICTURES. ALL RIGHTS RESERVED.
       </div>
     </footer>
